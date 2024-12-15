@@ -1,0 +1,173 @@
+/* Reset basic styles */
+body, html, #root {
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Landing page container */
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Background image with opacity */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the container */
+  background: url('../assets/PLSP.png') no-repeat center center/cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Header (logo) */
+.header {
+  padding: 0%;
+  margin: 0%;
+}
+
+.USPlogo {
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Main content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color:darkgreen;
+}
+
+p {
+  font-size: 2.3rem;
+  margin: 0;
+  color: darkgreen;
+}
+
+/* Button container */
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.btn {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Sign up button */
+.signup-btn {
+  background-color: #4caf50; 
+}
+
+.signup-btn:hover {
+  background-color: #45a049;
+}
+
+/* Log in button */
+.login-btn {
+  background-color: #4caf50; 
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+/* Overlay for popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup container */
+.popup {
+  background: white;
+  padding: 4%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: darkgreen;
+}
+
+.btn{
+  background-color: #4caf50;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+/* OTP input */
+.otp-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Popup buttons */
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.close-btn {
+  background-color: grey; 
+}
+
+.close-btn:hover {
+  background-color: darkgrey;
+}
+
+input{
+  width: 93%;
+  padding: 5%;
+  margin: 2%;
+}
+
